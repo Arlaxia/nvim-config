@@ -16,4 +16,4 @@ require "core.bufferline"
 require "core.undotree"
 require "core.project"
 require "core.alpha"
-
+require "core.impatient"

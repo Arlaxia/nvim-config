@@ -54,6 +54,7 @@ return packer.startup(function(use)
     use "ahmedkhalf/project.nvim"
 	use "moll/vim-bbye"
     use "goolord/alpha-nvim"
+    use "lewis6991/impatient.nvim"
 
     -- Colorschemes
     use { "catppuccin/nvim", as = "catppuccin" }
