@@ -5,4 +5,5 @@ require "core.colorscheme"
 require "core.cmp"
 require "core.lsp"
 require "core.telescope"
+require "core.treesitter"
 
