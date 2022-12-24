@@ -65,3 +65,6 @@ vim.keymap.set("n", "<c-t>", "<cmd>Telescope live_grep<CR>", opts)
 
 -- Nvim tree
 vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>')
+
+-- Undotree
+vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)

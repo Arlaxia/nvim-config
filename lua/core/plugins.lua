@@ -50,6 +50,7 @@ return packer.startup(function(use)
     use "nvim-lualine/lualine.nvim"
     use "akinsho/toggleterm.nvim"
     use "akinsho/bufferline.nvim"
+	use "mbbill/undotree"
 
     -- Colorschemes
     use { "catppuccin/nvim", as = "catppuccin" }
