@@ -7,4 +7,5 @@ require "core.lsp"
 require "core.telescope"
 require "core.treesitter"
 require "core.nvim-tree"
+require "core.comment"
 
