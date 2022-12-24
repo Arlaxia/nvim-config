@@ -14,7 +14,6 @@ vim.g.maplocalleader = " "
 --   term_mode = "t",
 --   command_mode = "c",
 
--- Normal --
 -- Better window navigation
 vim.keymap.set("n", "<C-h>", "<C-w>h", opts)
 vim.keymap.set("n", "<C-j>", "<C-w>j", opts)
@@ -56,13 +55,11 @@ vim.keymap.set("x", "K", ":move '<-2<CR>gv-gv", opts)
 vim.keymap.set("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 vim.keymap.set("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
--- Terminal --
--- Better terminal navigation
--- vim.keymap.set("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
--- vim.keymap.set("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
--- vim.keymap.set("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
--- vim.keymap.set("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
---
+-- Navigate buffers
+vim.keymap.set("n", "<S-l>", ":bnext<CR>", opts)
+vim.keymap.set("n", "<S-h>", ":bprevious<CR>", opts)
+vim.keymap.set("n", "<leader>c", ":bdelete<CR>", opts)
+
 vim.keymap.set("n", "<leader>f", "<cmd>Telescope find_files<CR>", opts)
 vim.keymap.set("n", "<c-t>", "<cmd>Telescope live_grep<CR>", opts)
 
