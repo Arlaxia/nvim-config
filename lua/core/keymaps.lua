@@ -58,10 +58,13 @@ vim.keymap.set("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- Navigate buffers
 vim.keymap.set("n", "<S-l>", ":bnext<CR>", opts)
 vim.keymap.set("n", "<S-h>", ":bprevious<CR>", opts)
-vim.keymap.set("n", "<leader>c", ":Bdelete<CR>", opts)
+vim.keymap.set("n", "<leader>q", ":Bdelete<CR>", opts)
+vim.keymap.set("n", "<C-k>w", ":bufdo Bdelete<CR>", opts)
 
-vim.keymap.set("n", "<leader>f", "<cmd>Telescope find_files<CR>", opts)
-vim.keymap.set("n", "<c-t>", "<cmd>Telescope live_grep<CR>", opts)
+-- Telescope
+vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opts)
+vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", opts)
+vim.keymap.set("n", "<leader>fp", "<cmd>Telescope projects<CR>", opts)
 
 -- Nvim tree
 vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>')
