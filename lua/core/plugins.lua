@@ -49,6 +49,7 @@ return packer.startup(function(use)
     use "numToStr/Comment.nvim" -- Easily comment stuff
     use "nvim-lualine/lualine.nvim"
     use "akinsho/toggleterm.nvim"
+    use "akinsho/bufferline.nvim"
 
     -- Colorschemes
     use { "catppuccin/nvim", as = "catppuccin" }
