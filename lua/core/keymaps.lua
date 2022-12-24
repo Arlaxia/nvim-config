@@ -67,7 +67,8 @@ vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", opts)
 vim.keymap.set("n", "<leader>fp", "<cmd>Telescope projects<CR>", opts)
 
 -- Nvim tree
-vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>')
+vim.keymap.set('n', '<leader>et', ':NvimTreeToggle<CR>')
+vim.keymap.set('n', '<leader>ef', ':NvimTreeFocus<CR>')
 
 -- Undotree
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
