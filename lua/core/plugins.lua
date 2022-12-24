@@ -53,6 +53,7 @@ return packer.startup(function(use)
 	use "mbbill/undotree"
     use "ahmedkhalf/project.nvim"
 	use "moll/vim-bbye"
+    use "goolord/alpha-nvim"
 
     -- Colorschemes
     use { "catppuccin/nvim", as = "catppuccin" }
