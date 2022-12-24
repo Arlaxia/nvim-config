@@ -22,6 +22,8 @@ nvim_tree.setup {
         "dashboard",
         "alpha",
     },
+    sync_root_with_cwd = true,
+    respect_buf_cwd = true,
     open_on_tab = false,
     hijack_cursor = true,
     update_cwd = true,
@@ -33,6 +35,7 @@ nvim_tree.setup {
     update_focused_file = {
         enable = true,
         update_cwd = true,
+        update_root = true,
         ignore_list = {},
     },
     git = {
