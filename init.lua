@@ -8,4 +8,6 @@ require "core.telescope"
 require "core.treesitter"
 require "core.nvim-tree"
 require "core.comment"
+require "core.autopairs"
+require "core.gitsigns"
 
