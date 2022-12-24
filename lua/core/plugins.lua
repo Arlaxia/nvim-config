@@ -47,7 +47,8 @@ return packer.startup(function(use)
     use "kyazdani42/nvim-web-devicons"
     use "kyazdani42/nvim-tree.lua"
     use "numToStr/Comment.nvim" -- Easily comment stuff
-    use 'nvim-lualine/lualine.nvim'
+    use "nvim-lualine/lualine.nvim"
+    use "akinsho/toggleterm.nvim"
 
     -- Colorschemes
     use { "catppuccin/nvim", as = "catppuccin" }
