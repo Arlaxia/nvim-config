@@ -21,8 +21,6 @@ vim.keymap.set("n", "<C-j>", "<C-w>j", opts)
 vim.keymap.set("n", "<C-k>", "<C-w>k", opts)
 vim.keymap.set("n", "<C-l>", "<C-w>l", opts)
 
-vim.keymap.set("n", "<leader>e", ":Lex 30<cr>", opts)
-
 -- Resize with arrows
 vim.keymap.set("n", "<C-Up>", ":resize -2<CR>", opts)
 vim.keymap.set("n", "<C-Down>", ":resize +2<CR>", opts)
@@ -67,3 +65,6 @@ vim.keymap.set("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 --
 vim.keymap.set("n", "<leader>f", "<cmd>Telescope find_files<CR>", opts)
 vim.keymap.set("n", "<c-t>", "<cmd>Telescope live_grep<CR>", opts)
+
+-- Nvim tree
+vim.keymap.set('n', '<leader>e', ':NvimTreeFocus<CR>')
