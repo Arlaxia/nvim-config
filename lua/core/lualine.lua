@@ -19,12 +19,15 @@ lualine.setup {
         theme = "auto",
         component_separators = { left = '', right = ''},
         section_separators = { left = '', right = ''},
+        -- Use `:echo &ft` to know the file type of a buffer
         disabled_filetypes = {
             statusline = {},
             winbar = {},
             "dashboard",
             "NvimTree",
             "Outline",
+            "diff",
+            "undotree",
         },
         ignore_focus = {},
         always_divide_middle = true,
