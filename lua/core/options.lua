@@ -33,5 +33,5 @@ vim.opt.colorcolumn = "88"
 
 -- Other
 vim.opt.updatetime = 50
-vim.opt.iskeyword:append "-"
+vim.opt.iskeyword:append "-"      -- Considers hyphens as parts of words
 
