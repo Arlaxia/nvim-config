@@ -1,5 +1,5 @@
 local opts = { noremap = true, silent = true }
-local term_opts = { silent = true }
+-- local term_opts = { silent = true }
 
 --Remap space as leader key
 vim.keymap.set("", "<Space>", "<Nop>", opts)
@@ -67,4 +67,4 @@ vim.keymap.set("n", "<leader>f", "<cmd>Telescope find_files<CR>", opts)
 vim.keymap.set("n", "<c-t>", "<cmd>Telescope live_grep<CR>", opts)
 
 -- Nvim tree
-vim.keymap.set('n', '<leader>e', ':NvimTreeFocus<CR>')
+vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>')
