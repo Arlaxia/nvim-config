@@ -31,6 +31,8 @@ if not require_ok then
 end
 lsp.setup_nvim_cmp(cmp_opts)
 
+-- Apply null-ls setup
+require "core.lsp.null-ls"
 
 -- Finalize setup
 lsp.setup()
