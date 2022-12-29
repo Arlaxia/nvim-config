@@ -19,6 +19,7 @@ vim.keymap.set("n", "<C-h>", "<C-w>h", opts)
 vim.keymap.set("n", "<C-j>", "<C-w>j", opts)
 vim.keymap.set("n", "<C-k>", "<C-w>k", opts)
 vim.keymap.set("n", "<C-l>", "<C-w>l", opts)
+vim.keymap.set("n", "<leader>qw", ":q<CR>", opts) -- Close (quit) window
 
 -- Resize with arrows
 vim.keymap.set("n", "<C-Up>", ":resize -2<CR>", opts)
@@ -58,8 +59,8 @@ vim.keymap.set("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- Navigate buffers
 vim.keymap.set("n", "<S-l>", ":bnext<CR>", opts)
 vim.keymap.set("n", "<S-h>", ":bprevious<CR>", opts)
-vim.keymap.set("n", "<leader>q", ":Bdelete<CR>", opts)
-vim.keymap.set("n", "<C-k>w", ":bufdo Bdelete<CR>", opts)
+vim.keymap.set("n", "<leader>qq", ":Bdelete<CR>", opts)
+vim.keymap.set("n", "<leader>qa", ":bufdo Bdelete<CR>", opts)
 
 -- Telescope
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opts)
