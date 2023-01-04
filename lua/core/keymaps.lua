@@ -62,12 +62,12 @@ vim.keymap.set("n", "<S-h>", ":bprevious<CR>", opts)
 vim.keymap.set("n", "<leader>qq", ":Bdelete<CR>", opts)
 vim.keymap.set("n", "<leader>qa", ":bufdo Bdelete<CR>", opts)
 
--- Telescope
+-- Telescope - file navigation
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opts)
 vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", opts)
 vim.keymap.set("n", "<leader>fp", "<cmd>Telescope projects<CR>", opts)
 
--- Nvim tree
+-- Nvim tree - folders navigation
 vim.keymap.set('n', '<leader>et', ':NvimTreeToggle<CR>')
 vim.keymap.set('n', '<leader>ef', ':NvimTreeFocus<CR>')
 
