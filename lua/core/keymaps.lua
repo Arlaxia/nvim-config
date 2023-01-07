@@ -48,7 +48,7 @@ vim.keymap.set("n", "<leader>p", "\"+p", opts)
 -- Move text up and down
 vim.keymap.set("v", "<A-j>", ":m .+1<CR>==", opts)
 vim.keymap.set("v", "<A-k>", ":m .-2<CR>==", opts)
-vim.keymap.set("v", "p", '"_dP', opts)
+vim.keymap.set("v", "p", "\"_dP", opts)
 
 -- Move text up and down
 vim.keymap.set("x", "J", ":move '>+1<CR>gv-gv", opts)
@@ -59,15 +59,16 @@ vim.keymap.set("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- Navigate buffers
 vim.keymap.set("n", "<S-l>", ":bnext<CR>", opts)
 vim.keymap.set("n", "<S-h>", ":bprevious<CR>", opts)
-vim.keymap.set("n", "<leader>qq", ":Bdelete<CR>", opts)
-vim.keymap.set("n", "<leader>qa", ":bufdo Bdelete<CR>", opts)
+vim.keymap.set("n", "<leader>qb", ":Bdelete<CR>", opts) -- quit buffer
+vim.keymap.set("n", "<leader>qa", ":bufdo Bdelete<CR>", opts) -- quit all (buffers)
+vim.keymap.set("n", "<leader>qn", ":qa<CR>", opts) -- quit nvim (while saving all buffers)
 
 -- Telescope - file navigation
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opts)
 vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", opts)
 vim.keymap.set("n", "<leader>fp", "<cmd>Telescope projects<CR>", opts)
 
--- Nvim tree - folders navigation
+-- Nvim tree - directories navigation
 vim.keymap.set('n', '<leader>et', ':NvimTreeToggle<CR>')
 vim.keymap.set('n', '<leader>ef', ':NvimTreeFocus<CR>')
 

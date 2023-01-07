@@ -13,7 +13,7 @@ The spacebar acts as the leader key. Most useful commands are assigned with a le
 keymapping, that is, `<leader>...`.
 
 Keymaps try to follow a mnemonic device, usually by assigning a letter to a certain
-function. These are:
+function. These functions are:
 
 - `<leader>f...`: file keymaps
 - `<leader>e...`: explorer keymaps
